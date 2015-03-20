@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: white;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: black;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 60px;
+    line-height: 50px;
+  }
+  small {
+    font-size: 16px;
+  }
+ 
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+.button {
+     
+    /*Step 2: Basic Button Styles*/
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+     
+    /*Step 3: Text Styles*/
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+     margin-left: -180px;
+    margin-top: 50px;
+}
+ 
+.button1 {
+
+display: block;
+    height: 100px;
+    width: 300px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+     
+    /*Step 3: Text Styles*/
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+     margin-left: 150px;
+    margin-top: -105px;
+
+}
+.button2 {
+display: block;
+    height: 100px;
+    width: 630px;
+    background: #34696f;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+     
+    /*Step 3: Text Styles*/
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    font: bold 3.2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+     margin-left: -180px;
+    margin-top: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 70.25%;
+    padding-top: 90px;
+    height: 0;
+    overflow: hidden;
+    margin-left: -200px;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+    position: absolute;
+    top: -100;
+    left: 0;
+    width: 60%;
+    height: 60%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Finance Web Application</h1>
+
+<h2>hello start ups</h2>
+<div class="first">
+ <a href="" class="button">OurFeatures</a>
+ <br></br>
+ <a href="" class="button1">OurApp</a>
+ <br></br>
+  <a href="" class="button2">MyProjects</a>
+  <br></br>
+  <link href="hello.css" rel="stylesheet">
+   
+</div>
+<div class="video-container">
+<iframe src="http://player.vimeo.com/video/6284199?title=0&byline=0&portrait=0" width="800" height="450" frameborder="0"></iframe>
+</div>
+
+
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+<footer>
+<v>contact us ....</v>
+</body>
